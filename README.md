@@ -6,7 +6,6 @@ For the given Python task I have created two python files as:
         When user clicks on "Submit", post("/") API is called which will save the details into the database and also call client API to deploy the container.
         When client API deploys container successfully it will display the success message.
         At last it will display form data successfully message also.
-
     2. main.py
         This is the client API file in which I have created the post("/api/endpoint") to deploy the docker container.
         It will simply pull the docker image and then deploy the container allowing mentioned ports.
