@@ -1,6 +1,16 @@
-# FastAPI
+For the given Python task I have created two python files as:
+    1. server.py:
+        This is the server API file in which I have created Sqlite db to store image_url, internal port and host port.
+        After that I have created HTML Form to read these 3 values from user and also added submit button.
+        Then localhost:8000 will call my get("/") API and it will display the form.
+        When user clicks on "Submit", post("/") API is called which will save the details into the database and also call client API to deploy the container.
+        When client API deploys container successfully it will display the success message.
+        At last it will display form data successfully message also.
 
-I have created basic application using FastAPI in which server sends data to client by calling client's API.
-Basically, It take user input as docker image url, internal and host ports to expose.
-This data is saved to sqlite database and also sent to client, then client will pull the docker image and deploy the container.
-After that, i have integrated ngrok to expose the localhost service to the internet.
+    2. main.py
+        This is the client API file in which I have created the post("/api/endpoint") to deploy the docker container.
+        It will simply pull the docker image and then deploy the container allowing mentioned ports.
+        
+requirements.txt - In this file I have listed the python packages that are required to be installed for this task.
+
+Output images - I have added some screenshots after successful execution of the whole application using ngrok.
